@@ -329,23 +329,26 @@ namespace Dictionary_FinallyProject
                 {
                     using (StreamReader readerT = new StreamReader(_pathsForWords[_indexPathForTranslate]))
                     {
-                        using (FileStream fstream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write))
-                        {
-                            int i = 0;
-                            while (!readerW.EndOfStream || !readerT.EndOfStream)
+                        using (StreamReader readerL = new StreamReader(_pathsForWords[_indexPathForThirdFileWithWords]))
                             {
-                                BinaryFormatter formatter = new BinaryFormatter();
-
-                                i++;
-                                if (i == lineNumber)
+                                using (FileStream fstream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write))
                                 {
-                                    formatter.Serialize(fstream, ($"<{_fromLanguage}>" + readerW.ReadLine() + $"-><{_toLanguage}>" + readerT.ReadLine()));
-                                    break;
-                                }
-                            }
-                            Console.WriteLine("Файл создан, путь -> " + path);
-                            Console.ReadKey();
-                        }
+                                    int i = 0;
+                                    while (!readerW.EndOfStream || !readerT.EndOfStream)
+                                        {
+                                            BinaryFormatter formatter = new BinaryFormatter();
+
+                                            i++;
+                                            if (i == lineNumber)
+                                            {
+                                                formatter.Serialize(fstream, ($"<{_fromLanguage}>" + readerW.ReadLine() + $"-> <{_toLanguage}>" + readerT.ReadLine() + $"-> <{_thirdLanguage}>" + readerL.ReadLine()));
+                                                break;
+                                            }
+                                        }
+        Console.WriteLine("Файл создан, путь -> " + path);
+        Console.ReadKey();
+    }
+}
                     }
                 }
             }
