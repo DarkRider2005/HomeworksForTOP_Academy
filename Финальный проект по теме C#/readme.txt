@@ -1,0 +1,1 @@
+папку words и Database положить в папку Debug
