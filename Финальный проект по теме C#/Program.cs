@@ -93,7 +93,7 @@ namespace Dictionary_FinallyProject
                 int lineNumber = 0;
                 action = int.Parse(Console.ReadLine());
 
-                if (action > 3 && action < 6)
+                if (action > 2 && action < 6)
                 {
                     Console.Write("Введите номер слова(строки), с которым хотите работать. Номер -> ");
                     lineNumber = int.Parse(Console.ReadLine());
