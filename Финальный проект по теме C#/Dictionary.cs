@@ -202,7 +202,7 @@ namespace Dictionary_FinallyProject
                                 }
                                 else
                                 {
-                                    Console.WriteLine($"Найден перевод слова <{word}> -> ({_toLanguage}) язык <{readerT.ReadLine()}>");
+                                    Console.WriteLine($"Найден перевод слова <{word}> -> ({_toLanguage})<{readerT.ReadLine()}>");
                                     break;
                                 }
                             }
@@ -211,7 +211,7 @@ namespace Dictionary_FinallyProject
                     else
                     {
                         int action = 0;
-                        Console.WriteLine($"Перевода для этого слова <{word}> на {_toLanguage} нет в словаре, но вы можете его добавить. Добавить?");
+                        Console.WriteLine($"Перевода для этого слова <{word}> на {_toLanguage} язык нет в словаре, но вы можете его добавить. Добавить?");
                         Console.WriteLine("|1| <Да>");
                         Console.WriteLine("|2| <Нет>");
 
