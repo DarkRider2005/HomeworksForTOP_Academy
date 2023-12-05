@@ -202,7 +202,7 @@ namespace Dictionary_FinallyProject
                                 }
                                 else
                                 {
-                                    Console.WriteLine($"Найден перевод слова <{word}> -> ({_toLanguage})<{readerT.ReadLine()}>");
+                                    Console.WriteLine($"Найден перевод слова <{word}> -> ({_toLanguage}) язык <{readerT.ReadLine()}>");
                                     break;
                                 }
                             }
