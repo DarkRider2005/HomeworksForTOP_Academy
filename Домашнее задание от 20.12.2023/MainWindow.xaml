@@ -1,0 +1,77 @@
+﻿<Window x:Class="WPFProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProject"
+        mc:Ignorable="d"
+        Title="Window" Height="550" Width="600">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="/04-ilmen.jpg"/>
+            </Label.Background>
+        </Label>
+
+        <TabControl Grid.Row="1" Grid.ColumnSpan="2" TabStripPlacement="Left">
+            <TabItem Width="100" Header="Главная" IsSelected="True">
+                <TextBlock TextWrapping="Wrap">
+Ильме́нский государственный запове́дник — государственный заповедник, структурно входит в состав Южно-Уральского научного центра Уральского отделения РАН.
+<LineBreak/>
+Находится в центральной части Челябинской области около города Миасс. 
+14 мая 1920 года по декрету В.И. Ленина Ильменские горы были объявлены минералогическим заповедником, одним из первых заповедников, созданных в России, 
+сейчас он по своей площади занимает тридцать четвёртое место среди заповедников страны. 
+Это природоохранное, научно-исследовательское государственное учреждение со статусом института в составе Уральского отделения Российской Академии наук. 
+Целью деятельности заповедника является сохранение в естественном состоянии природного комплекса, выполнение фундаментальных научных исследований геолого-минералогического, 
+эколого-биологического профиля, экологическое и естественно-научное просвещение населения. 
+Коллектив учёных и сотрудников заповедника ведёт активную просветительскую работу по популяризации науки и пропаганде бережного отношения к природе и защиты окружающей среды.
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Новости">
+                <TextBlock TextWrapping="Wrap">
+                    Торфяной пожар произошел в Ильменском заповеднике в Челябинской области. Площадь возгорания составила около 1 гектара, сообщили в пресс-службе заповедника.
+<LineBreak/>
+«Пожар начался днем 28 апреля у северо-восточной границы заповедника. Его тушили с 12:00 до 22:00. Сложность была в том, что горел торф», — уточнили в заповедники.
+<LineBreak/>
+С пожаром боролись 12 сотрудников лесоохраны и четыре представителя МЧС. Тушить огонь пришлось с помощью лесопожарных ранцев, которые вмещают до 20 литров воды. 
+По предварительным данным, причиной пожара стал окурок, выброшенный из автомобиля на трассе Челябинск — Миасс, которая проходит рядом с заповедником. 
+Это второй пожар в Ильменском заповеднике за последний месяц.
+<LineBreak/>
+Ранее сообщалось, что в Челябинской области завели около 40 административных дел за нарушение противопожарного режима. В регионе действует особый противопожарный режим.<LineBreak/>
+                    <Image Source="/pozar.png" Margin="10,0" Height="227" Width="447"/>
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Услуги">
+                <TextBlock TextWrapping="Wrap">
+                   ЧАСЫ РАБОТЫ МУЗЕЯ ИЛЬМЕНСКОГО ЗАПОВЕДНИКА
+С 10:00 до 18:00 со среды по воскресенье. Понедельник и вторник — выходные дни.<LineBreak/>
+ЦЕНА БИЛЕТА В ИЛЬМЕНСКИЙ ЗАПОВЕДНИК<LineBreak/>
+взрослый - 300 руб.;<LineBreak/>
+детский – 100 руб.;<LineBreak/>
+пенсионеры – 100 руб.<LineBreak/>
+                    <Image Source="/zapovednik.jpg" Margin="20,5" Height="335"/>
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Контакты">
+                <TextBlock TextWrapping="Wrap">
+                   ТЕЛЕФОН (СПРАВОЧНАЯ ЗАПОВЕДНИКА)<LineBreak/>
++7 (3513) 59-18-48<LineBreak/>
+ОФИЦИАЛЬНЫЙ САЙТ ИЛЬМЕНСКОГО ЗАПОВЕДНИКА<LineBreak/>
+http://igz.ilmeny.ac.ru<LineBreak/>
+                    <Image Source="/phone.png" Margin="0,10" Height="191" Width="159"/>
+                </TextBlock>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
