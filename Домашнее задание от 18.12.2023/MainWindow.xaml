@@ -1,0 +1,103 @@
+﻿<Window x:Class="WPFProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProject"
+        mc:Ignorable="d"
+        Title="Window" Height="550" Width="600">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="/Chelyabinsk.jpg"/>
+            </Label.Background>
+        </Label>
+
+        <WrapPanel Grid.Row="1" Width="150">
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White">
+                Главная
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White">
+                Услуги
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White">
+                Экскурсии
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White">
+                История
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White">
+                Новости
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Width="150" Height="25" Margin="0,1" Foreground="White" Content="Контакты">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0D3088"/>
+                        <GradientStop Color="#FF0E4E0C" Offset="0.543"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </WrapPanel>
+
+        <TextBlock Grid.Column ="1" Grid.Row="1" TextWrapping="Wrap">
+            Челя́бинск (произношение(инф.)) — восьмой по численности населения город в Российской Федерации, 
+административный центр Челябинской области, шестнадцатый по занимаемой площади городской округ. 
+Начальный пункт Транссибирской железнодорожной магистрали на западе. 
+Второй по величине культурный, экономический, деловой и политический центр УрФО. Население — 1 182 517 человек (2023)
+<LineBreak/>
+Челябинский городской округ является городским округом с внутригородским делением. 
+Соответствует административно-территориальной единице город областного значения Челябинск.
+<LineBreak/>
+Город расположен на геологической границе Урала и Сибири, на восточном склоне Уральских гор, по обоим берегам Миасса (бассейн Тобола)
+Основанный в 1736 году как крепость, Челябинск к XIX веку стал одним из крупнейших торговых центров Урала, 
+а к концу века и всей России в связи с появлением в 1892 году железнодорожного сообщения города с Москвой. 
+В связи с активным строительством промышленных предприятий в Челябинске в годы первых пятилеток, 
+а затем и эвакуацией заводов во время Великой Отечественной войны, город стал одним из крупнейших в СССР промышленных центров. 
+Благодаря производству танков и других боевых машин в военный период, а также значительному общему вкладу в победу, 
+Челябинску присвоено государственное звание «Город трудовой доблести», а сам город получил общеизвестное неофициальное название «Танкоград».
+        </TextBlock>
+
+    </Grid>
+
+</Window>
